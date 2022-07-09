@@ -9,6 +9,9 @@
 .row {
     margin: 0 auto;
 }
+a {
+    text-decoration: none;
+}
 .wrap {
     display: flex;
     flex-direction: row;
@@ -17,6 +20,7 @@
 
 .container {
     height: 100vh;
+    width: 100vw;
 }
 .navbar {
     height: 50px;
@@ -45,7 +49,8 @@
 }
 .banner {
     height: 100%;
-    background: url(./img/banner.svg);
+    width: 100vw;
+    background: url(./img/bann.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,7 +59,7 @@
 }
 .banner .cols {
     display: flex;
-    font-display: row;
+    flex-direction: row;
     justify-content: space-between;
     height: 100%;
 }
@@ -71,4 +76,62 @@
     height: 100%;
 
 }
+
+/************ REUSABLE COMPONENTS *********/
+.section-programs .row .wrap {
+    padding: 10px 30px;
+} 
+.programs-cards {
+    height: 400px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px 20px 20px;
+}
+.card {
+    height: 300px;
+    width: 260px;
+    padding: 14px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+.card-head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6%;
+    height: 15%;
+    justify-content: space-between;
+}
+.card-head .card-img{
+    width: 40%;
+}
+.card-head .card-heading {
+    width: 60%;
+}
+.card-head .card-img img {
+    width: 50%;
+    height: 100%;
+}
+.card-head .card-heading {
+    display: flex;
+    align-items: center;
+}
+.card-content {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.card-link {
+    height: 10%;
+    margin-bottom: 0;
+}
+
 
