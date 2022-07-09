@@ -34,6 +34,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    height: 100%;
 }
 .nav .logo {
     height: 40px;
@@ -159,19 +160,19 @@ a {
     border-radius: 14px;
     background-color: bisque;
 }
-.section-features .row .cols .left-col {
+.section-features .row .cols .right-col {
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-.section-features .row .cols .left-col h2,
-    .section-features .row .cols .left-col p{
+.section-features .row .cols .right-col h2,
+    .section-features .row .cols .right-col p{
     margin-bottom: 50px;
 }
-.section-features .row .cols .features-left-col-wrap {
+.section-features .row .cols .features-right-col-wrap {
     display: flex;
 }
-.features-left-col-wrap .membership {
+.features-right-col-wrap .membership {
     margin-right: 50px;
 }
 .feat-wrap {
