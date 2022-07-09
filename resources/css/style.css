@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/************ REUSABLE COMPONENTS *********/
+.row {
+    margin: 0 auto;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    height: 100vh;
+}
+.navbar {
+    height: 50px;
+    background-color: brown; 
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.nav .logo {
+    height: 40px;
+}
+.nav .logo img {
+    height: 100%;
+    width: 40px;
+}
+.nav .links ul {
+    display: flex;
+    justify-content: space-between;
+}
+.nav .links ul li {
+    padding-left: 15px;
+    list-style: none;
+}
+.banner {
+    height: 100%;
+    background: url(./img/banner.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+.banner .cols {
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+    height: 100%;
+}
+.banner .cols .left-col {
+    position: relative;
+    /* top: 25%; */
+    width: 50%;
+    margin: 150px auto ;
+    color: #fff;
+    padding: 50px;
+}
+.banner .cols .right-col {
+    width: 50%;
+    height: 100%;
+
+}
+
