@@ -17,7 +17,10 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
-
+.section-programs,
+.section-features {
+    margin-bottom: 30px;
+}
 .container {
     height: 100vh;
     width: 100vw;
@@ -57,24 +60,23 @@ a {
     display: flex;
     flex-direction: column;
 }
-.banner .cols {
+.cols {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
+    padding: 0 50px;
+    /* height: 100%; */
+}
+.left-col,
+.right-col {
+    width: 50%;
 }
 .banner .cols .left-col {
     position: relative;
     /* top: 25%; */
-    width: 50%;
     margin: 150px auto ;
     color: #fff;
     padding: 50px;
-}
-.banner .cols .right-col {
-    width: 50%;
-    height: 100%;
-
 }
 
 /************ REUSABLE COMPONENTS *********/
@@ -82,7 +84,7 @@ a {
     padding: 10px 30px;
 } 
 .programs-cards {
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
     background-color: aquamarine;
     display: flex;
@@ -134,4 +136,45 @@ a {
     margin-bottom: 0;
 }
 
+/************ SECTION FEATURES *********/
 
+#cr {
+    height: 200px;
+    width: 50%;
+    margin: 0 0 10px 0;
+    display: flex;
+}
+#left-col-features {
+    flex-direction: row!important;
+}
+.row1,
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+.features-card {
+    width: 50%;
+    padding: 15px;
+    margin: 0 20px 20px 0;
+    border-radius: 14px;
+    background-color: bisque;
+}
+.section-features .row .cols .left-col {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.section-features .row .cols .left-col h2,
+    .section-features .row .cols .left-col p{
+    margin-bottom: 50px;
+}
+.section-features .row .cols .features-left-col-wrap {
+    display: flex;
+}
+.features-left-col-wrap .membership {
+    margin-right: 50px;
+}
+.feat-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
